@@ -16,11 +16,10 @@ function App() {
   let csv = "";
 
   useEffect(() => {
-    // create the header row
     let header = columns?.map((col) => col.Header).join(",");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     csv += header + "\n";
 
-    // create the data rows
     rows?.forEach((row) => {
       let dataRow = "";
       row.cells.forEach((cell) => {
