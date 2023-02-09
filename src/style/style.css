@@ -45,6 +45,32 @@ input {
   height: 1.5rem;
 }
 
-.table {
+.tablecontainer {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  margin: 10px auto;
+}
+
+.download-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #688dd0;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.download-button:hover {
+  background-color: #5f7ab3;
+}
+
+.download-button:active {
+  background-color: #465f91;
 }
