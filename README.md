@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# NTT DATA CHALLENGE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+NTT DATA CHALLENGE is a technical test that evaluates the knowledge of the person. Following the instructions; As shown in the images below, the problem is structured for the applicant to solve and create an application in the programming language that he likes. 
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+Use the package manager [npm](https://docs.npmjs.com/cli/v8/commands/npm-install) to install NTT DATA CHALLENGE application.
 
-### `npm start`
+```bash
+npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+After the previous step of the installation, to access the React application and be able to see what has been achieved so far, we would have to type the following code in the console.
 
-### `npm test`
+```bash
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Explanation with visuals
 
-### `npm run build`
+To mention more about this app, I will use some pictures to mention some code an explain what is the use in the React App that I made to solve the challenge.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In this React app, Auth Context was used to save the data so I can manage it wherever I need it.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+"React-table" library was used to create the table with the information. This had to have the data for the header, so they were created by making an useMemo that contain array.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Then, having already saved the data in a useState thanks to the request that I made to the API through Axios, I create other useMemo that contain array containing objects with the information of each of 15 people.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Finally, we use those useMemos so that, when invoking those hooks, it returns the data and we go through it in a map, returning the table we want.
+## Author
+[Bruno Saenz](https://github.com/Brunosz19)
